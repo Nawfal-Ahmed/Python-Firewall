@@ -1,4 +1,4 @@
-README — Python Firewall (Beginner-friendly)
+README — Python Firewall 
 
 A simple, hands-on Python firewall that uses iptables to block/unblock ports and manage basic rules.
 This README gives step-by-step instructions so someone with no network or Linux experience can clone the project, install what’s needed, and run the program on a Linux machine (Kali Linux recommended). The project draws on ideas in the included slide deck (packet inspection, iptables integration, Scapy, GUI ideas). 
