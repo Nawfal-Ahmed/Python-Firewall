@@ -254,7 +254,7 @@ ls -l firewall.py
 nano firewall.py   # (show the main menu area briefly)
 
 
-Say: “This script uses iptables to add/remove DROP rules for TCP ports.”
+
 
 Start a simple service on port 8080 (Terminal A)
 
@@ -262,7 +262,7 @@ python3 -m http.server 8080
 
 
 Expected: Serving HTTP on 0.0.0.0 port 8080 ...
-Say: “This is a test web server — it listens on port 8080.”
+
 
 Prove it works (Terminal B)
 
@@ -270,7 +270,7 @@ curl -I localhost:8080
 
 
 Expected output: an HTTP header (HTTP/1.0 200 OK or directory listing).
-Say: “The port is open and responding.”
+
 
 Show current iptables rules
 
@@ -278,7 +278,7 @@ sudo iptables -L -n --line-numbers
 
 
 Expected: no DROP rule for dpt:8080.
-Say: “No block rule yet.”
+
 
 Run the firewall script and block port 8080
 
@@ -293,7 +293,7 @@ curl -I localhost:8080
 
 
 Expected: either curl: (7) Failed to connect... (if iptables returns RST) or curl hangs and eventually times out (if packets are dropped).
-Say: “Now the server is unreachable because the firewall dropped/blocked the port.”
+
 
 Show iptables rule was added
 
